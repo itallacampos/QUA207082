@@ -33,9 +33,15 @@ li:hover { }
 li:first-child { }
 ul {
     width: 200px;
+    float: left;
+    margin: 0;
+    padding: 0;
     
 }
-#main { }
+#main { 
+    margin: 0 210px;
+    padding: 10px;
+}
 #sidebar { 
     background-color: #32a4e7;
     color: white;
