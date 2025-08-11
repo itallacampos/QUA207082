@@ -1,63 +1,55 @@
-body{ 
+body{
     background-color: #d14836;
     font-family: Arial;
     
 }
-#top{ 
+#top{
     color: white;
     font-size: 30px;
     padding: 15px;
 }
 ul {
-    margin: 10px;
     float: right;
-   
- }
+    cursor: pointer;
+}
 #top h1{
-    font-weight: bold;
- }
-#menubar{
-    font: Verdana;
- }
+    line-height: 50px;
+    margin: 0px;
+}
+#menubar{ }
 #main{
     background-color: white;
     font: 80% Verdana;
     padding: 10px;
- }
-#main h1, #main h2, #sidebar{ 
-    background-color: #d14836;
-    line-height: 26px;
-    
 }
-
-#sidebar{ 
+#main h1, #main h2, #sidebar{
+    color: #d14836;
+}
+#sidebar{
     background-color: #F6DAD7;
-    padding: 15px;
-   
-}
-#bottom{
-    font-size: 70%;
- }
-#bottom p{ 
-    color: white;
-    text-align: center;
     padding: 10px;
-    line-height: 20px;
 }
-li{ 
+#bottom{ 
+    padding: 10px;
+}
+#bottom p{
+    color: white;
+    font-size: 70%;
+    line-height: 20px;
+    text-align: center;
+}
+li{
     background-color: #d14836;
     border: #d14836 solid 1px;
-    cursor: pointer;
-    color: white;
+    width: 155px;
+    border-radius: 40px;
+    color: white;    
     list-style-type: none;
     margin: 10px;
     padding: 5px;
     text-align: center;
-    width: 155px;
-    border-radius: 40px;
-
 }
-li:hover{ 
+li:hover{
     background-color: white;
     color: #d14836;
 }
@@ -65,12 +57,11 @@ li:nth-child(2){
     background-color: white;
     color: #d14836;
     font-weight: bold;
- }
-a{ 
-    background-color: #d14836;
+}
+a{
+    color: #d14836;
     text-decoration: none;
 }
-a:hover{ 
+a:hover{
     text-decoration: underline;
 }
-
