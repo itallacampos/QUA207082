@@ -38,7 +38,7 @@
         }
         #principal p{
             padding-top: 20px;
-            width: 400px;
+            max-width: 400px;
             margin: auto;
         }
 
@@ -65,6 +65,7 @@
         #lista{
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             
             
             
@@ -72,11 +73,43 @@
         .caixa p{
 
         }
+        #depoimentos{
+            margin-top: 200px;
+            background-color: gray;
+            padding: 10px;
+            text-align: center;
+            justify-content: baseline;
+        }
+        #depoimentos *{
+            padding: 10px;
             
+
+        }
+        #depoimentos h2{
+            padding: 35px;
+            font-weight: bold;
+        }
+           footer{
+            background-color: black;
+            color: white;
+            text-align: right;
+           } 
+           body{
+            max-width: 1000px;
+            margin: auto;
+           }
+           #conteiner{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+           }
         
         </style>
 </head>
 <body>
+    <div id="conteiner">
+    <div id="grupo01"><
     <header>
         <h1>Minha Marca</h1>
         <nav>
@@ -107,6 +140,17 @@
 
             </div>
         </section>
+        <section id="depoimentos">
+            <h2>O que nossos Clientes dizem</h2>
+            <p>"Mudou completamente minha forma de trabalhar. Recomendo!"</p>
+            <p>"Excelente atendimentos e resultados incriveis!"</p>
+        </section>
+        <footer>
+            &copy; 2025 Minha Marca. Todos os direitos reservados.
+        </footer>
+
+    </div>
+    </div>
     
 </body>
 </html>
