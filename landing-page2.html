@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Marca</title>
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             text-decoration: none;
             border: none;
         }
 
-        header{
+        header {
             display: flex;
-            justify-content: space-between;            
+            justify-content: space-between;
             align-items: center;
             background-color: gray;
             color: white;
@@ -28,26 +29,26 @@
             margin: 0px 2px;
         }
 
-        #principal{
+        #principal {
             display: flex;
         }
 
-        #principal div{
+        #principal div {
             width: 50%;
             margin: 30px;
             text-align: left;
         }
 
-        #principal h2{
+        #principal h2 {
             font-size: 200%;
         }
 
-        #principal p{
+        #principal p {
             margin-top: 20px;
             font-size: 90%;
         }
 
-        #principal button{
+        #principal button {
             padding: 20px;
             margin: 30px 0px;
             width: 300px;
@@ -56,7 +57,7 @@
             font-weight: bold;
         }
 
-        #principal iframe{
+        #principal iframe {
             width: 100%;
             height: 100%;
         }
@@ -66,14 +67,49 @@
             justify-content: center;
         }
 
-        #carrossel div{
+        #carrossel div {
             height: 130px;
             width: 200px;
             background-color: gray;
             margin: 10px;
         }
+
+        #noticias {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+
+        }
+
+        .noticia {
+            width: 300px;
+            margin: 30px;
+
+        }
+        .noticia div{
+            border: 2px solid black;
+            border-radius: 100%;
+            float: left;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            
+        }
+        .noticia h3 {
+            font-size: xx-large;
+            
+        }
+
+        .noticia p {
+            margin-top: 5px;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Logo</h1>
@@ -86,11 +122,16 @@
     <section id="principal">
         <div>
             <h2>What is Lorem Ipsum?</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                scrambled it to make a type specimen book.</p>
             <button>CTA Button</button>
         </div>
         <div>
-            <iframe src="https://www.youtube.com/embed/tNobiwuAaAg?si=i2CUHtTka1ab2uEf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/tNobiwuAaAg?si=i2CUHtTka1ab2uEf" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
     <section id="carrossel">
@@ -99,5 +140,53 @@
         <div></div>
         <div></div>
     </section>
+    <section id="noticias">
+        <div class="noticia">
+            <div>1</div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum accusantium laudantium itaque officiis
+                exercitationem assumenda quis, explicabo nihil dignissimos quasi, nostrum veritatis earum, nam natus
+                ratione magni eaque eveniet ab.</p>
+        </div>
+        <div class="noticia">
+            <div>2</div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum accusantium laudantium itaque officiis
+                exercitationem assumenda quis, explicabo nihil dignissimos quasi, nostrum veritatis earum, nam natus
+                ratione magni eaque eveniet ab.</p>
+        </div>
+        <div class="noticia">
+            <div>3</div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum accusantium laudantium itaque officiis
+                exercitationem assumenda quis, explicabo nihil dignissimos quasi, nostrum veritatis earum, nam natus
+                ratione magni eaque eveniet ab.</p>
+        </div>
+        <div class="noticia">
+            <div>4</div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum accusantium laudantium itaque officiis
+                exercitationem assumenda quis, explicabo nihil dignissimos quasi, nostrum veritatis earum, nam natus
+                ratione magni eaque eveniet ab.</p>
+        </div>
+        <div class="noticia">
+            <div>5</div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum accusantium laudantium itaque officiis
+                exercitationem assumenda quis, explicabo nihil dignissimos quasi, nostrum veritatis earum, nam natus
+                ratione magni eaque eveniet ab.</p>
+        </div>
+        <div class="noticia">
+            <div>6</div>
+            <h3>Lorem ipsum</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum accusantium laudantium itaque officiis
+                exercitationem assumenda quis, explicabo nihil dignissimos quasi, nostrum veritatis earum, nam natus
+                ratione magni eaque eveniet ab.</p>
+        </div>
+
+    </section>
+
+
 </body>
+
 </html>
