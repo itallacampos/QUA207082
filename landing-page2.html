@@ -62,24 +62,22 @@
             height: 100%;
         }
 
-        #carrossel {
-            display: flex;
-            justify-content: center;
-        }
-
-        #carrossel div {
-            height: 130px;
-            width: 200px;
-            background-color: gray;
-            margin: 10px;
-        }
-
         #noticias {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-            
 
+
+        }
+
+        #bt-left, #bt-right {
+            font-size: 300%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            
+            
+        
         }
 
         .noticia {
@@ -87,7 +85,8 @@
             margin: 10px;
 
         }
-        .noticia div{
+
+        .noticia div {
             border: 2px solid black;
             border-radius: 100%;
             float: left;
@@ -97,11 +96,12 @@
             justify-content: center;
             align-items: center;
             margin-right: 10px;
-            
+
         }
+
         .noticia h3 {
             font-size: xx-large;
-            
+
         }
 
         .noticia p {
@@ -112,17 +112,19 @@
             display: flex;
             justify-content: space-evenly;
             margin: 50px;
-           padding: 10px;
-            
+            padding: 10px;
+
         }
-        #depoimentos *{
+
+        #depoimentos * {
             padding: 10px;
         }
-    
+
 
         .depoimentos {
             display: flex;
         }
+
         .foto {
             background-color: gray;
             width: 150px;
@@ -130,37 +132,66 @@
             float: left;
             margin-right: 15px;
             border-radius: 5px;
-          
+
         }
 
-        .depoimentos p{
+        .depoimentos p {
             width: 200px;
-            
+
         }
 
-        footer{
+        footer {
             background-color: grey;
             color: black;
             text-align: center;
             padding: 30px;
-           } 
+        }
 
-           body{
+        body {
             width: 1000px;
             margin: auto;
             border: 2px solid gray;
             background-color: white;
-           }
-           html{
+        }
+
+        html {
             background-color: rgb(207, 206, 206);
-           }
-           hr{
+        }
+
+        hr {
             border: 2px solid rgb(179, 177, 177);
             width: 95%;
             margin: auto;
-           }
+        }
+
+        #carrossel {
+            display: flex;
+            justify-content: center;
+        }
+
+        #container {
+            width: 880px;
+            overflow: hidden;
+        }
+
+        #carrossel-container {
+            width: 100%;
+            display: flex;
+
+        }
+
+        #carrossel-container div {
+            min-width: 200px;
+            height: 130px;
+            background-color: gray;
+            margin: 10px;
+
+        }
+
     </style>
-    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -183,16 +214,33 @@
             <button>CTA Button</button>
         </div>
         <div>
-            <iframe src="https://www.youtube.com/embed/sTjSx4noKJo?si=-gqwEqEweCPmS2yy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/sTjSx4noKJo?si=-gqwEqEweCPmS2yy" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
     <hr>
     <section id="carrossel">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="bt-left" onclick="carrossel(-1)">
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+                <div id="container">
+                    <div id="carrossel-container">
+                        <div class="img">1</div>
+                        <div class="img">2</div>
+                        <div class="img">3</div>
+                        <div class="img">4</div>
+                        <div class="img">5</div>
+                        <div class="img">6</div>
+                    </div>
+                </div>
+
+        <div id="bt-right" onclick="carrossel(1)">
+            <i class="fa-solid fa-angle-right"></i>
+        </div>
     </section>
+
     <section id="noticias">
         <div class="noticia">
             <div>1</div>
@@ -256,7 +304,17 @@
     <footer>
         <p>© 2023 Minha Marca. Todos os direitos reservados.</p>
     </footer>
-
+<script>
+    const imgs = document.getElementById("carrossel-container");
+    const img = document.querySelectorAll("#carrossel-container div");
+    let idx = 0;
+    function carrossel(i) {
+        idx += i;
+        if (idx < 0) idx = 0;
+        if (idx > img.length - 1) idx = img.length - 1;
+        imgs.style.transform = `translateX(${-idx * 220}px)`;
+    }
+</script>
 
 </body>
 
