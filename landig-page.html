@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Marca</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            border: none;
+        }
+
+        header{
+            background-color: #fb6f92;
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            align-items: center;
+            border: black 1px solid;
+            
+        }
+
+        nav a {
+            background-color: #ffc2d1;
+            color: black;
+            padding: 10px 15px;
+            margin: 0px 2px;
+            border: black 1px solid;
+            
+        }
+
+        #principal {
+            background-color: #ffc2d1;
+            text-align: center;
+            border: black 1px solid;
+        }
+
+        #principal h2{
+            padding-top: 45px;
+        }
+
+        #principal p{
+            padding-top: 20px;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        #principal button{
+            padding: 10px 15px;
+            margin: 40px auto;
+        }
+
+        #lista {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        #lista .caixa{
+            background-color: #fb6f92;
+            width: 200px;
+            margin: 20px;            
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            border: black 1px solid;
+        }
+
+        .caixa h3{
+            padding-bottom: 10px;
+            
+
+        }
+
+        #depoimentos{
+            text-align: center;
+            background-color: #ffc2d1;
+            padding: 10px;
+            border: black 1px solid;
+        }
+
+        #depoimentos *{
+            padding: 10px;
+        }
+
+        footer{
+            background-color: #fb6f92;
+            color: white;
+            text-align: end;
+            border: black 1px solid;
+        }
+
+        body{
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        #conteiner{
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        button{
+            background-color: #fb6f92;
+            color: white;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div id="conteiner">
+    <div id="grupo01">
+    <header>
+        <h1>La Vie Estética</h1>
+        <nav>
+            <a href="#"><i class="fa-brands fa-waze"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </nav>
+    </header>
+    <section id="principal">
+        <h2>Lá Vie Estética</h2>
+        <p> "Sua beleza realçada com técnologia e cuidado especializado".
+        </p>
+        <button>Quero Agendar Agora</button>
+    </section>
+    <section id="lista">
+        <div class="caixa">
+            <h3>Estética</h3>
+            <p>Tratamentos estéticos personalizados para realçar sua melhor versão.</p>
+        </div>
+        <div class="caixa">
+            <h3>Agendamentos</h3>
+            <p>Agende sua avaliação gratuita.</p>
+        </div>
+        <div class="caixa">
+            <h3>Técnologia</h3>
+            <p>Equipamentos de ultima geração.</p>
+        </div>
+    </section>
+
+    </div>
+    <div id="grupo02">
+
+    <section id="depoimentos">
+        <h2>O que nossos clientes dizem</h2>
+        <p>"Realçou o que há de melhor em mim. Recomendo!"</p>
+        <p>"Excelente atendimento e resultados incríveis!"</p>
+    </section>
+    <footer>
+        &copy; 2025 Lávieestética - Todos os direitos reservados.
+    </footer>
+
+    </div> 
+    </div>
+
+</body>
+</html>
