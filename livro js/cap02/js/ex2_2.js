@@ -7,7 +7,7 @@ const resp2 = document.querySelector("h4");
 // cria um "ouvinte" de evento, acionado quando o botão submit for clicado
 frm.addEventListener("submit", (e)=> {
     const titulo = frm.inTitulo.value; // obtém o conteúdo dos campos 
-    const duracao = (frm.inDuracao.value); // obtém o conteúdo dos campos
+    const duracao = Number(frm.inDuracao.value); // obtém o conteúdo dos campos
 
     const horas = Math.floor(duracao / 60); //calcula a quantidade de horas
     const minutos = duracao % 60; //calcula a quantidade de minutos
