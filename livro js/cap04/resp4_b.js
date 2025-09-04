@@ -7,6 +7,6 @@ frm.addEventListener("submit", (e) =>{
     const permitida = Number(frm.inPermitida.value)
     const condutor = Number(frm.inCondutor.value)
 
-    
+    if(condutor <= velocidade){}
 
 })
