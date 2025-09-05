@@ -14,12 +14,12 @@ frm.addEventListener("submit", (e) =>{
         resp1.innerText = "Não pode ser um triângulo"
         return        
     }
-    if(a == b && a == c)  
+    if(ladoa == ladob && ladoa == ladoc){  
         resp1.innerText = "Lados formam um Triângulo"
         resp2.innerText = "Equilátero"  
     
     
-    else if(ladoa == ladob && ladoa != ladoc){
+    }else if(ladoa == ladob && ladoa != ladoc){
         resp1.innerText = "Lados formam um Triângulo"
         resp2.innerText = "Isóceles"
         
