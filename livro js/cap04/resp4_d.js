@@ -19,13 +19,13 @@ frm.addEventListener("submit", (e) =>{
         resp2.innerText = "Equilátero"  
     
     
-    }else if(ladoa == ladob && ladoa != ladoc){
-        resp1.innerText = "Lados formam um Triângulo"
-        resp2.innerText = "Isóceles"
-        
-    }else if(ladoa != ladob && ladoc != ladoa){
+    }else if(ladoa != ladob && ladoa != ladoc && ladob != ladoc){
         resp1.innerText = "Lados formam um Triângulo"
         resp2.innerText = "Escaleno"
+        
+    }else{
+        resp1.innerText = "Lados formam um Triângulo"
+        resp2.innerText = "Isóceles"
         
     }
     
