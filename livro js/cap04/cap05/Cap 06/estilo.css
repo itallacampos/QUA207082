@@ -1,0 +1,35 @@
+img.normal{
+    float: left;
+    height: 300px;
+    widht: 300px;
+}
+
+img.alta{
+    float: left;
+    height: 400px;
+    width: 300px;
+}
+
+h1{
+    border-bottom: inset;
+}
+
+pre{
+    font-size: 1.2em;
+}
+
+.font.azul{
+    color: blue;
+}
+
+.oculta{
+    display: none;
+}
+
+.exibe{
+    display: inline;
+}
+
+.italico{
+    font-size: italic;
+}
