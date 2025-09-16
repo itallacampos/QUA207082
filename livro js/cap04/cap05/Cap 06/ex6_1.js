@@ -29,10 +29,24 @@ frm.btUrgencia.addEventListener("click", () => {
     }
     const nome = frm.inPaciente.value
     pacientes.unshift(nome) //adiciona paciente no inicio do vetor
-    //forEach aplicado sobre o array paciente
+    //forEach aplicado sobre o array paciente (array é uma lista "organizada" de valores, guardados em posição numeradas-acessar e manipular de forma rapida)
     let lista = ""
-    pacientes.forEach((paciente, i) => (lista += `${i}. ${paciente}\n`))
+    pacientes.forEach((paciente, i) => (lista += `${i+1}. ${paciente}\n`))
     respLista.innerText = lista
     frm.inPaciente.value = ""
     frm.inPaciente.focus()
+})
+
+frm.btAtender.addEventListener("click", () => {
+    //se o tamanho do vetor = 0
+    if(pacientes.length == 0){
+        alert("Não há pacientes na lista de espera")
+        frm.inPaciente.focus()
+        return
+    }
+    const atender = pacientes.shift() //remove do inicio da fila(e obtém o nome)
+    respNome.innerText = atender //exibe o nome do paciente em atendimento
+    let lista = ""
+    pacientes.forEach((paciente, i) => (lista += `${i+1}. ${paciente}\n`))
+    respLista.innerText = lista
 })
